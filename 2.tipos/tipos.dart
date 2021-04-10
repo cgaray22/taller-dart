@@ -35,5 +35,46 @@ void main(){
   var numero1 = 50;
   var texto9 = "Se interpola \ '$texto8 \' con el valor de la variable numero 1 = $numero1";
   print(texto9);
+
+  //listas
+  var lista1 = ["mazda", "chevrolet", "kia", 8];
+
+  List<String> lista2 = ["mazda", "chevrolet", "kia"];
+
+  print(lista1.reversed);
+  print(lista1.first);
+  print(lista1.last);
+  print(lista2);
+
+  lista1.add("toyota");
+
+  lista1.clear();
+
+  var lista4;
+
+  var lista3 = ["toyota", ...?lista1, ...?lista2, ...?lista4];
+
+  print(lista3);
+
+
+  //Set
+  
+  var set1 = {'mazda', 'chevrolet', 'kia'};
+
+  set1.add("toyota");
+  set1.add("chevrolet");
+  set1.add("Nuevo");
+
+  print(set1);
+
+  //maps
+
+  String llave = 'black';
+  var translation = {'red': 'rojo', 'blue': 'azul', 'green': 'verde'};
+  translation[llave] = "negro";
+
+  print(translation);
+
+
   
 }

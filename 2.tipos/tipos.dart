@@ -52,7 +52,7 @@ void main(){
 
   var lista4;
 
-  var lista3 = ["toyota", ...?lista1, ...?lista2, ...?lista4];
+  var lista3 = ["toyota", ...lista1, ...lista2, ...?lista4];
 
   print(lista3);
 

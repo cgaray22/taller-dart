@@ -1,21 +1,19 @@
-void main(){
+void main() {
+  var resultado1 = obtenerNombre("Elkin");
+  var resultado2 = obtenerNombreDos("Yesid");
+  var resultado3 = obtenerNombreTres(valor: "carlos", edad: 15);
 
-  var resultado = obtenerNombre('German');
-  var resultadoDos = obtenerNombredos('Carlos');
-  var resultadoTres = obtenerNombreTres(nombre: 'Juan', edad: 15);
-
-  print(resultado);
-  print(resultadoDos);
-  print(resultadoTres);
+  print(resultado1);
+  print(resultado2);
+  print(resultado3);
 }
 
-String obtenerNombre(String valor){
+String obtenerNombre(String valor, [int? estatura, String? apellido]) {
   return 'Mi nombre es $valor';
 }
 
-String obtenerNombredos(String valor) =>'Mi nombre es $valor';
+String obtenerNombreDos(String valor) => 'Mi nombre es $valor';
 
-String obtenerNombreTres({String nombre = 'Pablo', int? edad}){
-  return 'Mi nombre es $nombre y mi edad es $edad';
+String obtenerNombreTres({String valor = 'pablo', int? edad}) {
+  return "Mi nombre es $valor y mi edad es $edad";
 }
-  
